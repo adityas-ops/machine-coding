@@ -24,7 +24,7 @@ function Layout({children,customClass}) {
        
       </div>
     </div>
-    <div className={`${customClass} w-full h-full overflow-y-scroll`} >
+    <div className={`${customClass} w-full h-full pb-[50px] overflow-y-scroll`} >
     {children}
     </div>
     

@@ -38,6 +38,44 @@
                 ]
             }
         ]
+    },
+    {
+        id:5,
+        autherName:"Eva",
+        comment:"I don't know",
+        date:"2021-09-01",
+        time:"12:00",
+        likes:0,
+        replies:[
+            {
+                id:6,
+                autherName:"Fiona",
+                comment:"I agree with Eva",
+                date:"2021-09-01",
+                time:"12:00",
+                likes:0,
+                replies:[]
+            },
+            {
+                id:7,
+                autherName:"Gina",
+                comment:"I disagree with Eva",
+                date:"2021-09-01",
+                time:"12:00",
+                likes:0,
+                replies:[
+                    {
+                        id:8,
+                        autherName:"Hannah",
+                        comment:"I agree with Gina",
+                        date:"2021-09-01",
+                        time:"12:00",
+                        likes:0,
+                        replies:[]
+                    }
+                ]
+            }
+        ]
     }
  ]
 
