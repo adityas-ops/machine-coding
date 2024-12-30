@@ -1,10 +1,11 @@
 "use client";
+import { v4 as uuidv4 } from "uuid";
 
 const useTraverseTree = () => {
   function insertNode(tree, folderId, item, isFolder) {
     if (tree.id === folderId && tree.isFolder) {
       tree.items.unshift({
-        id: new Date().getTime().toString(),
+        id: uuidv4(),
         name: item,
         isFolder: isFolder,
         items: [],

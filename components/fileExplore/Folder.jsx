@@ -38,8 +38,8 @@ function Folder({ exploreData,handleInsertNode,handleDeleteNode }) {
     };
     console.log(exploreData)
     return (
-      <div className="relative pl-4 w-full">
-        <button
+      <div className="relative cursor-pointer pl-4 w-full">
+        <div
           onClick={() => {
             setIsOpen(!isOpen);
             setShowInput({
@@ -81,7 +81,7 @@ function Folder({ exploreData,handleInsertNode,handleDeleteNode }) {
               )}
             </div>
           )}
-        </button>
+        </div>
         {showInput.show && (
           <div className="pl-6 relative flex items-center gap-[4px]">
             {showInput.isFolder ? (

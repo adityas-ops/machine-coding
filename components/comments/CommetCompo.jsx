@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Avatar from "../common/Avatar";
+import { v4 as uuidv4 } from "uuid";
 
 function CommetCompo({ comment, isReply, handleAddComment,handleAddLike }) {
   const [showReply, setShowReply] = useState(false);
@@ -20,7 +21,7 @@ function CommetCompo({ comment, isReply, handleAddComment,handleAddLike }) {
       time: "12:00",
       likes: 0,
       replies: [],
-      id: Date.now().toString(),
+      id: uuidv4(),
     };
     handleAddComment(newComment, id);
     console.log(newComment);
